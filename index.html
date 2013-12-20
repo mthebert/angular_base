@@ -1,0 +1,28 @@
+<html data-ng-app="appName">
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+</head>
+<body>
+	<div data-ng-controller="appController">
+
+	</div>
+	<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="js/angular.min.js"></script>
+	<script type="text/javascript" src="js/angular-route.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script>
+		var appName = angular.module('appName', []);
+
+		var controllers = {};
+
+		controllers.appController =  function ($scope){
+			$scope.data=[
+
+			];
+		};
+
+		appName.controller(controllers);
+	</script>
+</body>
+</html>
